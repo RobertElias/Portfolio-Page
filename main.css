@@ -467,7 +467,7 @@ input[type="submit"]:hover{
     position: absolute;
     width: 5rem;
     height: 5rem;
-    background-color: rgb(156, 66, 66);
+    background-color: #4a87e2;
     top: .5rem;
     right: 5rem;
     border-radius: 100%;
@@ -477,7 +477,7 @@ input[type="submit"]:hover{
 }
 
 .up i{
-    color: #3a3ad6;
+    color: #ffe838;
     font-size: 2rem;
     margin: auto;
 }

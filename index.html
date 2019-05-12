@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <style>
+        #myBtn {
+            background-color: rgb(238, 255, 0);
+            color: white;
+        }
+
+        #myBtn:hover {
+            background-color: #4a87e2;
+        }
+    </style>
 </head>
 
 <body>
@@ -207,24 +232,24 @@
                     <li class="date" data-date="2008 - Present">
                         <h1>State of California EDD Employment Program Representative</h1>
                         <p>Independently review, investigate, and determine claimant eligibility for
-                           Unemployment Insurance benefits, in accordance with laws, regulations,
-                           policies and precedent decisions. Issue written notification to the
-                           claimant when applicable. Authorize and issue Unemployment Insurance
-                           benefit payments to eligible claimants.
+                            Unemployment Insurance benefits, in accordance with laws, regulations,
+                            policies and precedent decisions. Issue written notification to the
+                            claimant when applicable. Authorize and issue Unemployment Insurance
+                            benefit payments to eligible claimants.
                         </p><br>
                         <p>Conduct Unemployment Insurance fact finding interviews with employers,
-                           claimants and other contacts; document all facts, findings, actions, and
-                           decisions; forward documentation for special handling and claim action as
-                           appropriate. Conduct benefit determination interviews within the scheduled time
-                           frames to meet Department of Labor standards.
+                            claimants and other contacts; document all facts, findings, actions, and
+                            decisions; forward documentation for special handling and claim action as
+                            appropriate. Conduct benefit determination interviews within the scheduled time
+                            frames to meet Department of Labor standards.
                         </p><br>
                         <p>Respond to employer, claimant, and third party inquiries through written,
-                           electronic, or telephonic methods; inform claimants and employers of their
-                           rights and responsibilities under the Unemployment Insurance Program. Process
-                           rulings in a timely manner as per the Department policies.
+                            electronic, or telephonic methods; inform claimants and employers of their
+                            rights and responsibilities under the Unemployment Insurance Program. Process
+                            rulings in a timely manner as per the Department policies.
                         </p><br>
                         <p>
-                           Attend meetings and trainings as designated.
+                            Attend meetings and trainings as designated.
                         </p><br>
 
 
@@ -234,14 +259,15 @@
                     <li class="date" data-date="2003 - 2008">
                         <h1>Park Place Funding Mortgage Consultant</h1>
                         <p>Evaluate, authorize, or recommend approval of real estate, or credit loans.
-                           Advise borrowers on financial status and payment methods. Includes mortgage loan officers
-                           and agents, collection analysts, loan servicing officers, and loan underwriters.
-                           Analyze applicants' financial status, credit, and property evaluations to determine
-                           feasibility
-                           of granting loans.
+                            Advise borrowers on financial status and payment methods. Includes mortgage loan officers
+                            and agents, collection analysts, loan servicing officers, and loan underwriters.
+                            Analyze applicants' financial status, credit, and property evaluations to determine
+                            feasibility
+                            of granting loans.
                         </p><br>
                         <p>
-                            Work with clients to identify their financial goals and to find ways of reaching those goals.
+                            Work with clients to identify their financial goals and to find ways of reaching those
+                            goals.
                             Obtain and compile copies of loan applicants' credit histories, corporate financial
                             statements,and other financial information.
                             Meet with applicants to obtain information for loan applications and to answer questions
@@ -252,28 +278,35 @@
                         </p><br>
                         <p>
                             Correspond with customers to answer questions or resolve complaints. Establish
-                            organizational guidelines or policies. Submit applications to credit analysts for 
+                            organizational guidelines or policies. Submit applications to credit analysts for
                             verification and recommendation. Confer with underwriters to aid in resolving mortgage
                             application problems.
 
                         </p><br>
                         <p>
                             Analyze potential loan markets and develop referral networks to locate prospects for loans.
-                            Stay abreast of new types of loans and other financial services and products to better meet customers' needs.
+                            Stay abreast of new types of loans and other financial services and products to better meet
+                            customers' needs.
                         </p><br>
                         <p></p>
                         <p></p>
                     </li>
                     <li class="date" data-date="1995 - 2003">
                         <h1>United States Marine Corps Ammunition Technician Sergeant</h1>
-                        <p>Develop SOPs; Develop a Marine Ammunition Requirements Support Order (MARSO); Execute Marine Corps Ammunition Liaison duties;
-                           Monitor Ammunition Maintenance Operations; Evaluate personnel requiring certification within an ammunition qualification and 
-                           certification program; Manage the ammunition inventory; Plan strategic movement of ammunition for inter-theater operations 
-                           in support of combat operations.
+                        <p>Develop SOPs; Develop a Marine Ammunition Requirements Support Order (MARSO); Execute Marine
+                            Corps Ammunition Liaison duties;
+                            Monitor Ammunition Maintenance Operations; Evaluate personnel requiring certification within
+                            an ammunition qualification and
+                            certification program; Manage the ammunition inventory; Plan strategic movement of
+                            ammunition for inter-theater operations
+                            in support of combat operations.
                         </p>
-                        <p>Compute ammunition combat requirements; Establish ammunition Stock records; Prepare ammunition reports; 
-                           Process Notice of Ammunition Reclassification (NAR),(supplements) and Ammunition Information Notices (AIN);
-                           Process receipt documentation; Process requisition documentation; Requisition ammunition; Utilize a technical library.
+                        <p>Compute ammunition combat requirements; Establish ammunition Stock records; Prepare
+                            ammunition reports;
+                            Process Notice of Ammunition Reclassification (NAR),(supplements) and Ammunition Information
+                            Notices (AIN);
+                            Process receipt documentation; Process requisition documentation; Requisition ammunition;
+                            Utilize a technical library.
                         </p>
                         <br>
                     </li>
@@ -306,7 +339,9 @@
     </section>
     <footer class="copyright">
         <div class="up" id="up">
-            <i class="fas fa-chev-up"></i>
+            <i class="fas fa-angle-double-up"></i>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         </div>
         <p>&copy; 2019 Robert Elias</p>
     </footer>
